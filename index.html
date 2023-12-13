@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Fact of the Day</title> 
+ <style>
+  div, nav, ul, li, a {
+   display: inline-block;
+   position: relative;
+   box-sizing: border-box;
+  }
+  div, nav, footer {
+   width: 100%;
+  }
+  nav {
+   background: black;   
+   height: 60px;
+  }
+  nav ul li a {
+   color: white;
+   padding: 10px;
+  }
+  main {
+   margin: 30px;
+  }
+  footer {
+   position: fixed;
+   bottom: 0px;
+   height: 25%;   
+   background: black;
+   color: white;
+  }
+ </style>
+</head>
+
+<body>
+
+
+ <div>
+  <nav>
+   <ul>
+    <li><a href="javascript:void(0)">Link 1</a></li>
+    <li><a href="javascript:void(0)">Link 2</a></li>
+    <li><a href="javascript:void(0)">Link 3</a></li>
+    <li><a href="javascript:void(0)">Link 4</a></li>
+   </ul>
+  </nav>
+ </div>
+
+ <main>
+  <div>
+   <h1>Sample Page</h1>
+   <p>
+   Add a html tag with <code>id="factOfTheDay"</code> and add the below script somewhere beneath that html tag: <br>
+   <code>&lt;script src="https://cdn.jsdelivr.net/gh/isocialPractice/factOfTheDay/js/factOfTheDay.js"&gt;&lt;/script&gt;</code> <br><br>
+   Below is a working sample:
+   </p><br>
+   <div id="factOfTheDay"></div>
+  </div>
+ </main>
+
+
+ <footer> 
+  <p>Footer message.</p>
+ </footer>
+
+<script src="/js/factOfTheDay.js"></script>
+
+</body>
+</html>
