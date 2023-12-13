@@ -37,8 +37,10 @@
    pageID = result["tfa"]["pageid"];
    pageTitle = result["tfa"]["title"];
    // travers to get extract_html property
-   for (i in result) {
-    if (i == "extract_html") { extract_html += result[i]; }
+   for (i in result["tfa"]) {
+    if (i == "extract_html") { 
+     extract_html += result["tfa"][i]; 
+    }
    }       
   };
   getFeaturedArticle(); 
