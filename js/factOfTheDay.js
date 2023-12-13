@@ -61,7 +61,8 @@
    factOfTheDay.innerHTML = "Uh-oh - something went wrong.";  
   } else {                // Output first paragraph of featured article.    
   factOfTheDay.innerHTML = extract_html +   // Using str_replace() to clean extracted value.
-   " More at <a href='https://en.wikipedia.org/?curid=$pageID' target='_blank' rel='external'>" + 
+   " More at <a href='https://en.wikipedia.org/?curid=" + pageID + 
+   "' target='_blank' rel='external'>" + 
    pageTitle.replace(/_/g, " ") +
    "</a> Wikipedia page. ";
   }
