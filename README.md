@@ -1,10 +1,10 @@
 # Fact of the Day
 
-This repository works with the `<em>ctrl + click</em>` [Wikimedia API Portal](https://api.wikimedia.org/wiki/Main_Page).
+This repository works with the <em>`ctrl + click`</em> [Wikimedia API Portal](https://api.wikimedia.org/wiki/Main_Page).
 It calls the API and gets the day's featured article\(s\) from Wikipedia. The results are stored in a JSON file, and the output is an extract that day's featured article.
 
 
-To see a working sample `ctrl + click` [Fact of The Day Example](https://jhauga.github.io/factOfTheDay/). 
+To see a working sample <em>`ctrl + click`</em> [Fact of The Day Example](https://isocialPractice.github.io/factOfTheDay/). 
 
 ## Instructions - <em>for instant use</em>
 
@@ -14,7 +14,7 @@ To see a working sample `ctrl + click` [Fact of The Day Example](https://jhauga.
 ```
 2. Below that tag insert the below `script` tag as is: <br>
 ```
-<script src="/js/factOfTheDay.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/isocialPractice/factOfTheDay/js/factOfTheDay.js"></script>
 ```
 3. Add any additional elements or styling as needed.
 
