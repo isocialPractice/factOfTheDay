@@ -24,13 +24,13 @@ For the most part the comments within each file should provide quasi-instruction
 
 ### DIRECTORY NOTES:
 
-1. <strong>API</strong> - in `site root` 
+1. <strong>API</strong> - somewhere in `site root` 
    - extracts json from API call
    - NOTE - the current json file is just for example purposes.
-2. <strong>bin</strong> - is `site server` 
+2. <strong>bin</strong> - somewhere in `site server` 
    - a cronjob to get a daily json file
    - IMPORTANT - do not put within `site root`.
-3. <strong>js</strong>  - in `site root`
+3. <strong>js</strong>  - somewhere in `site root`
    - makes an AJAX request to get extracted date from API call.
 
 
