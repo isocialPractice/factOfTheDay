@@ -14,7 +14,7 @@ To see a working sample <em>`ctrl + click`</em> [Fact of The Day Example](https:
 ```
 2. Below that tag insert the below `script` tag as is: <br>
 ```
-<script src="https://cdn.jsdelivr.net/gh/isocialPractice/factOfTheDay/js/factOfTheDay.js"></script>
+<script src="https://isocialPractice.github.io/factOfTheDay/js/factOfTheDay.js"></script>
 ```
 3. Add any additional elements or styling as needed.
 

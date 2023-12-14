@@ -11,7 +11,7 @@
    function(yes, no) {
     let xmlhttp = new XMLHttpRequest();
     //xmlhttp.open("GET", "/API/factOfTheDay.php"); // if using from repo.
-    xmlhttp.open("GET", "API/factOfTheDay-JSON.json");
+    xmlhttp.open("GET", "https://isocialPractice.github.io/factOfTheDay/API/factOfTheDay-JSON.json");
     xmlhttp.onload = function() {
      if (xmlhttp.status == 200) {
       yes(xmlhttp.response);
