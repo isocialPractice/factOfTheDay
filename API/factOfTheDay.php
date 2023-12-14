@@ -4,8 +4,7 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
  // Define file - content extracted once daily via cronjob.
- $output = `curl https:\/\/practicing.xyz/API/factOfTheDay-JSON.json`; // to use as is
- //$output = file_get_contents("factOfTheDay-JSON.json"); // if using from repo
+ $output = file_get_contents("factOfTheDay-JSON.json"); // if using from repo
  $result = json_decode($output, true); 
  
  // Travers json and get content. 
