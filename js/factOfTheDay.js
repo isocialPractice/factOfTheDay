@@ -60,10 +60,10 @@
   if (error_out == 1) {
    factOfTheDay.innerHTML = "Uh-oh - something went wrong.";  
   } else {                // Output first paragraph of featured article.    
-  factOfTheDay.innerHTML = extract_html +   // Using str_replace() to clean extracted value.
+  factOfTheDay.innerHTML = extract_html +
    " More at <a href='https://en.wikipedia.org/?curid=" + pageID + 
    "' target='_blank' rel='external'>" + 
-   pageTitle.replace(/_/g, " ") +
+   pageTitle.replace(/_/g, " ") +  // Using str_replace() to clean extracted value.
    "</a> Wikipedia page. ";
   }
  });
