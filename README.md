@@ -6,13 +6,20 @@ It calls the API and gets the day's featured article\(s\) from Wikipedia. The re
 
 To see a working sample <em>`ctrl + click`</em> [Fact of The Day Example](https://isocialPractice.github.io/factOfTheDay/). 
 
-## Instructions - <em>for instant use</em>
+## Quickstart - <em>copy\/paste below into html file:</em>
+```
+<div id="factOfTheDay"></div>
+<script src="https://isocialPractice.github.io/factOfTheDay/js/factOfTheDay.js"></script>
+```
 
-1. In an html document add any tag with the id attrubte set to `d="factOfTheDay"`. For example: <br>
+
+## Instructions
+
+1. In an html document add any tag with the id attrubte set to `id="factOfTheDay"`. For example: <br>
 ```
 <div id="factOfTheDay"></div>
 ```
-2. Below that tag insert the below `script` tag as is: <br>
+2. Below the newly added html tag insert the below `script` tag as is: <br>
 ```
 <script src="https://isocialPractice.github.io/factOfTheDay/js/factOfTheDay.js"></script>
 ```
