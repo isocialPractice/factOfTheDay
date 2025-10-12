@@ -2,6 +2,9 @@
 # factOfTheDay
 # Extract the featured contnet from Wikipedia.
 
+# 0 (default), 1 outputs
+_debug=0
+
 # Define paths - change as needed.
 _apiRoot="API"
 
@@ -20,6 +23,11 @@ _today=$(date +%Y/%m/%d)
 function runWikiAPI() {
  curl -q -H "Authorization: Bearer $_wikiAPIToken" https://api.wikimedia.org/feed/v1/wikipedia/en/featured/$_today > "$_apiRoot/factOfTheDay-JSON.json"
  
+ # output data from server
+ if [ "$_debug" = "1" ]; then
+  cat "$_apiRoot/factOfTheDay-JSON.json"
+ fi
+
  # make sure that json returned with correct property
  node "$_apiRoot"/scripts/checkJSONReturn.js "$_apiRoot"/factOfTheDay-JSON.json "tfa" > "$_apiRoot"/logs/checkJSONReturn.txt
  
